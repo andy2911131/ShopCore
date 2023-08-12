@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+            <!-- Add 'mb-3' class for margin-bottom -->
+            <!-- 第一張圖連結到頁面1 -->
+            <a href="page1.html">
+                <img src="/img/任務曝光.png" class="img-fluid" alt="圖片1">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <!-- 第二張圖連結到頁面2 -->
+            <a href="page2.html">
+                <img src="/img/專家曝光.png" class="img-fluid" alt="圖片2">
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Styles
+{
+    <style>
+        .col-md-4 {
+            margin-top: 100px;
+        }
+
+            .col-md-4 img:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+    </style>
+}
